@@ -12,12 +12,12 @@ import random
 
 def sheep(phenny, input):
     if random.randint(0,1) == 0:
-        if input.group(2):
+        if input.group(2) != '':
             phenny.say("%s is a sheep!" % (input.group(2)))
         else:
             phenny.say("%s is a sheep!" % (input.nick))
     else:
-        if input.group(2):
+        if input.group(2) != '':
             phenny.say("%s is a heathen!" % (input.group(2)))
         else:
             phenny.say("%s is a heathen!" % (input.nick))
