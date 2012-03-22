@@ -23,3 +23,5 @@ def sheep(phenny, input):
             phenny.say("%s is a heathen!" % (input.nick))
 sheep.commands = ['sheep?']        
         
+if __name__ == '__main__':
+    print __doc__
